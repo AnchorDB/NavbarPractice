@@ -2,6 +2,12 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(68, 68, 68);
+    color:rgb(68, 68, 68);
+    font-family: 'Libre Baskerville', serif;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -10,6 +16,7 @@
     color: white;
     list-style: none;
     padding: 1em;
+    box-shadow: 0 0 15px rgba(207, 206, 206, 0.25);
 }
 
 @media(max-width: 700px) {
@@ -47,4 +54,54 @@ img {
 #img {
     padding-bottom: 0;
     margin-top: 0;
+}
+
+.header {
+    margin: 1em;
+    padding: 1em;
+    width: 40%;
+}
+
+.gradient-border {
+    background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+    border-radius: 16px;
+    padding: .2em 1em;
+    box-shadow: 0 0 15px rgba(207, 206, 206, 0.25);
+    margin: .5em auto;
+}
+
+.border-card {
+    background-color: white;
+    width: 120%;
+    border-radius: 8px;
+    box-shadow: 4px 8px 15px rgba(207, 206, 206, 0.25);
+    margin: 1em auto;
+    padding: 2em;
+}
+
+h1 {
+    margin: auto auto .3em;
+    text-align: left;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: auto;
+    text-align: left;
+    font-family: "libre baskerville",serif;
+    font-style: italic;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 2em;
+    gap: 1em;
+}
+
+.grid-item {
+    background-color: #fff;
+
 }
