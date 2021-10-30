@@ -117,3 +117,34 @@ h3 {
 .grid-item > p {
     color: rgb(143, 143, 143);
 }
+
+footer {
+    flex-shrink: 0;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 2em;
+    color: #fff;
+    background-color: midnightblue;
+}
+
+.email-form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: .3em;
+    justify-items: center;
+}
+
+.btn {
+    background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+    border: none;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
