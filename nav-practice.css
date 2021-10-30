@@ -97,11 +97,23 @@ h3 {
 
 .main-grid-container {
     display: grid;
-    grid-template-columns: minmax(0,1fr) 2em;
-    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 1em;
+    padding: 1em;
 }
 
 .grid-item {
     background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 4px 8px 15px rgba(207, 206, 206, 0.25);
+    padding: 1em;
+}
 
+.grid-item > h2 {
+    padding-bottom: 1em;
+}
+
+.grid-item > p {
+    color: rgb(143, 143, 143);
 }
