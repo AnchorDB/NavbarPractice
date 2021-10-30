@@ -124,8 +124,8 @@ footer {
 
 .email-form {
     display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 #email {
@@ -162,6 +162,30 @@ footer {
         margin-bottom: 0;
     }
     
+    .header {
+        margin: 1em;
+        padding: 1em;
+        width: 60%;
+    }
+    
+    .gradient-border {
+        background-image: linear-gradient(45deg, #ff8a00, #e52e71);
+        border-radius: 16px;
+        padding: .2em 1em;
+        box-shadow: 0 0 15px rgba(207, 206, 206, 0.25);
+        margin: .5em auto;
+    }
+    
+    .border-card {
+        background-color: white;
+        width: 120%;
+        border-radius: 8px;
+        box-shadow: 4px 8px 15px rgba(207, 206, 206, 0.25);
+        margin: 1em auto;
+        padding: 2em;
+        white-space: pre-line;
+    }
+    
     h1 {
         margin: auto auto .3em;
         text-align: left;
@@ -177,5 +201,19 @@ footer {
         gap: 2em;
         margin: 1em;
         padding: 1em;
+    }
+
+    footer {
+        flex-shrink: 0;
+    }
+    
+    .flex-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        padding: 2em;
+        color: #fff;
+        background-color: midnightblue;
     }
 }
